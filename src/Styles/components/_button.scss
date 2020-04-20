@@ -1,0 +1,17 @@
+Button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  font-size: $font-size-large;
+  
+  padding: $s-size $l-size;
+  
+  
+}
+
+button:hover {
+  background-color:lightsalmon;
+  color:#008CBA;
+}
+
+
