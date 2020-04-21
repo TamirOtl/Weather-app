@@ -37,7 +37,10 @@
   border-bottom: none;
   margin: 0;
   font-size: 22px;
-  overflow: hidden;
+  @media (max-width: $desktop-breakpoint) {
+    overflow: scroll;
+  }
+  
 }
 .list-body {
   margin-bottom: $m-size;
