@@ -9,8 +9,8 @@ export const footer = () => (
   //      <NavLink to='/' className='header__title'><h1 className="header__title">Weather Rumors</h1></NavLink> 
       
 <div>
-<Navbar bg="dark" variant="dark" className="header__content">
-    <Navbar.Brand href="/" className='header__title'><h1>Weather Rumors</h1></Navbar.Brand>
+<Navbar bg="dark" variant="dark" className="footer__content">
+    <Navbar.Brand href="/" className='footer__title'><h1>Copyright © 2020 Weather Rumors</h1></Navbar.Brand>
   
   </Navbar>
 </div>

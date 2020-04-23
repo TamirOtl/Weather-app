@@ -7,8 +7,8 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: $s-size 0;
-
+  padding: $s-size $s-size;
+  
   
 }
 
@@ -19,7 +19,11 @@
   
   h1 {
     margin: 0;
+    font-size: 30px;
     
-    
+  }
+  .header__title :hover{
+    background-color:lightsalmon;
+    color:#008CBA;
   }
 }

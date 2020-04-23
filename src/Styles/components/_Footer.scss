@@ -1,0 +1,26 @@
+.footer {
+    background: $dark-blue;
+  
+  }
+  
+  .footer__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: $s-size $s-size;
+    
+    
+  }
+  
+  .footer__title {
+    color: white;
+    text-decoration: none;
+    
+    
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      
+    }
+  }
+  
