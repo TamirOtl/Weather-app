@@ -70,7 +70,7 @@ const SearchPage  = () => {
         ShowWeather(Latitude,longitude);
       }   
       function ShowWeather(Latitude,longitude){
-         fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${Latitude}&lon=${longitude}&appid=26b12a44f4c02b6690ba0c54d93b86d5`)
+         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${Latitude}&lon=${longitude}&appid=26b12a44f4c02b6690ba0c54d93b86d5`)
          .then(res3 => res3.json())
          .then(result3 => {
            setWeather(result3);
