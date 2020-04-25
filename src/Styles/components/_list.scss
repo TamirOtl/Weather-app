@@ -10,6 +10,14 @@
   margin: 0;
   font-size: 22px;
   
+  @media (max-width: $desktop-breakpoint) {
+    padding: $l-size $l-size;
+    font-size: 14px;
+    h6{
+      text-decoration: underline;
+    }
+    
+  }
   
 }
 
@@ -24,8 +32,32 @@
   border-bottom: none;
   margin: 0;
   font-size: 22px;
-  overflow: scroll;
+  overflow-x:scroll;
+
 }
+
+/* width */
+.list-headerforcast::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.list-headerforcast::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.list-headerforcast::-webkit-scrollbar-thumb {
+  background: lightsalmon; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.list-headerforcast::-webkit-scrollbar-thumb:hover {
+  background: lightcoral; 
+}
+
 .list-headerforcast-overflow{
   background: #347bd5;
   border: 1px solid darken($off-white, 7%);
@@ -38,7 +70,8 @@
   margin: 0;
   font-size: 22px;
   @media (max-width: $desktop-breakpoint) {
-    overflow: scroll;
+    
+    overflow-y:scroll
   }
   
 }
@@ -55,16 +88,11 @@
   color: $off-white;
   text-align: center;
   background: #76a7e3;
-  padding: $s-size;
+  
   text-decoration: none;
  
   
-  @media (min-width: $desktop-breakpoint) {
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: $m-size;
-  }
+
 }
 
 .list-item--message {
@@ -86,6 +114,7 @@
 .list-item__title {
   margin: 0;
   word-break: break-all;
+  padding-top:35px;
 }
 
 .list-item__sub-title {

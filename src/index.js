@@ -6,7 +6,7 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import Main from'./Component/Main';
 import NotFoundPage from'./Component/NotFoundPage';
-
+import Covid from './Component/Covid-19'
 const App=()=>{
 
   return(
@@ -15,7 +15,8 @@ const App=()=>{
 
  <BrowserRouter>
         <Switch>
-          <Route path='/'  component={Main} exact/>
+          <Route path='/'  component={Main} exact={true}/>
+          <Route path='/Component/Covid-19' component={Covid} />
           <Route  component={NotFoundPage} />
         </Switch>
       

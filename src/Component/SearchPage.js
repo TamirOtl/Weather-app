@@ -2,11 +2,10 @@ import React,{useState} from "react";
 import WeatherPage from './WeatherPage'
 import { FaSistrix } from "react-icons/fa";
 import { IoIosPaperPlane } from "react-icons/io";
-import AREA from './Area'
+import Area from './Area'
 import { Route} from 'react-router-dom';
 import { createBrowserHistory } from "history";
 
-const history = createBrowserHistory()
 
 const SearchPage  = () => {
     const[query,setQuery]=useState('');
@@ -16,15 +15,10 @@ const SearchPage  = () => {
     const[longitude,setlongitude]=useState('')
     const [showText, setShowText] = useState(true);
     const error404='404'
-    const promise = new Promise((resolve,reject)=>{
-      setTimeout(() => {
-           resolve("this is my resolve data");
-          reject("city not found");
-      }, 1500);
-      
-      });
-    
+   
+  
     const search = (e) => {
+     
         e.preventDefault();
           fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=26b12a44f4c02b6690ba0c54d93b86d5`)
             .then(res => res.json())
@@ -47,6 +41,7 @@ const SearchPage  = () => {
               console.log('error: ', error);
         
             });
+            
             setShowText(false)
             
       }
@@ -91,7 +86,7 @@ const SearchPage  = () => {
 
     <div >
       		<form  className="form" onSubmit={search}> 
-          {weather.cod ?
+          {weather.cod==="404" ?
           	(<input type="text" placeholder="Find your location..."
                          value={query}  aria-label="Search" 
                          onSelect={e => setQuery(e.target.value)}
@@ -109,14 +104,14 @@ const SearchPage  = () => {
 					</form> 
           <button onClick={getLocation}><IoIosPaperPlane/>Current Location</button>
         
-         
+        
       <WeatherPage  weather={weather} full={full} />
 
 
       {weather.cod&& <Route to='/' />} 
       {weather.cod===error404? <p className="form__error">city not found</p>: ""}
-      {weather.cod===error404? <AREA/>:" "}
-      {showText &&<AREA/>}
+      {weather.cod===error404? <Area/>:" "}
+      {showText &&<Area/>}
      
      
 
