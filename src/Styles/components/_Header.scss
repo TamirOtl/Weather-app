@@ -8,7 +8,14 @@
   display: flex;
   justify-content: space-between;
   padding: $s-size $s-size;
+  @media (max-width: $desktop-breakpoint) {
+    padding-left: $l-size;
   
+   
+    h3{
+      font-size: 14px;
+    }
+  }
   
 }
 
@@ -16,18 +23,31 @@
   color: white;
   text-decoration: none;
   
-  
   h1 {
     margin: 0;
     font-size: 30px;
-    
+    padding-right: 0;
   }
-  .header__title :hover{
-    background-color:lightsalmon;
-    color:#008CBA;
+  
+  @media (max-width: $desktop-breakpoint) {
+    
+   
+    h1{
+      font-size: 18px;
+    }
+    h3{
+      font-size: 55px;
+    }
   }
 }
 .corona{
 height: 70px;
  width: 70px;
+ @media (max-width: $desktop-breakpoint) {
+    
+   
+  height: 40px;
+ width: 40px;
+  
+}
 }

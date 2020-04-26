@@ -15,55 +15,55 @@ return(
     <div>
     <div className="list-headerforcast">
       
-    <span><h5 >Now</h5><img className="list-item__sub-title"  alt="icon" src={`../Images/${props.full.hourly[0].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >Now</h5><img className="list-item__sub-title"   src={`../Images/${props.full.hourly[0].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[0].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(0,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png' alt="Sunset" />Sunset</p>:
     moment.tz(props.full.timezone).add(0,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span> 
 
-    <span><h5 >{moment.tz(props.full.timezone).add(1,"hour").format("h a")}</h5><img  alt="icon" className="list-item__sub-title" alt="icon" src={`../Images/${props.full.hourly[1].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(1,"hour").format("h a")}</h5><img   className="list-item__sub-title"  src={`../Images/${props.full.hourly[1].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[1].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(1,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?(<p><img className="sunrise" src='../Images/sunset.png' alt="Sunset"/> Sunset</p>):
    moment.tz(props.full.timezone).add(1,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span> 
 
-    <span><h5 >{moment.tz(props.full.timezone).add(2,"hour").format("h a")}</h5><img alt="icon" className="list-item__sub-title" src={`../Images/${props.full.hourly[2].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(2,"hour").format("h a")}</h5><img className="list-item__sub-title" src={`../Images/${props.full.hourly[2].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[2].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(2,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png' alt="Sunset"/>Sunset</p>:
     moment.tz(props.full.timezone).add(2,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span> 
 
-    <span><h5 >{moment.tz(props.full.timezone).add(3,"hour").format("h a")}</h5><img alt="icon"className="list-item__sub-title" src={`../Images/${props.full.hourly[3].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(3,"hour").format("h a")}</h5><img className="list-item__sub-title" src={`../Images/${props.full.hourly[3].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[3].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(3,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png' alt="Sunset"/>Sunset</p>:
     moment.tz(props.full.timezone).add(3,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span> 
 
-    <span><h5 >{moment.tz(props.full.timezone).add(4,"hour").format("h a")}</h5><img alt="icon" className="list-item__sub-title" src={`../Images/${props.full.hourly[4].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(4,"hour").format("h a")}</h5><img  className="list-item__sub-title" src={`../Images/${props.full.hourly[4].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[4].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(4,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png' alt="Sunset"/>Sunset</p>:
     moment.tz(props.full.timezone).add(4,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span> 
 
-    <span><h5 >{moment.tz(props.full.timezone).add(5,"hour").format("h a")}</h5><img alt="icon" className="list-item__sub-title" src={`../Images/${props.full.hourly[5].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(5,"hour").format("h a")}</h5><img  className="list-item__sub-title" src={`../Images/${props.full.hourly[5].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[5].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(5,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png' alt="Sunset"/>Sunset</p>:
     moment.tz(props.full.timezone).add(5,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span>
 
-    <span><h5 >{moment.tz(props.full.timezone).add(6,"hour").format("h a")}</h5><img alt="icon" className="list-item__sub-title" src={`../Images/${props.full.hourly[6].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(6,"hour").format("h a")}</h5><img  className="list-item__sub-title" src={`../Images/${props.full.hourly[6].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[6].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(6,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png' alt="Sunset"/>Sunset</p>:
    moment.tz(props.full.timezone).add(6,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span> 
 
-    <span><h5 >{moment.tz(props.full.timezone).add(7,"hour").format("h a")}</h5><img alt="icon" className="list-item__sub-title" src={`../Images/${props.full.hourly[7].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(7,"hour").format("h a")}</h5><img className="list-item__sub-title" src={`../Images/${props.full.hourly[7].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[7].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(7,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png' alt="Sunset"/>Sunset</p>:
     moment.tz(props.full.timezone).add(7,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span> 
 
-    <span><h5 >{moment.tz(props.full.timezone).add(8,"hour").format("h a")}</h5><img alt="icon" className="list-item__sub-title" src={`../Images/${props.full.hourly[8].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(8,"hour").format("h a")}</h5><img  className="list-item__sub-title" src={`../Images/${props.full.hourly[8].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[8].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(8,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png'alt="Sunset" />Sunset</p>:
    moment.tz(props.full.timezone).add(8,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
@@ -96,7 +96,7 @@ return(
     <span><h5 >{moment.tz(props.full.timezone).add(13,"hour").format("h a")}</h5><img  className="list-item__sub-title" src={`../Images/${props.full.hourly[13].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[13].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(13,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png'alt="Sunset" />Sunset</p>:
-    moment.tz(props.full.timezone).add(13,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?(<p><img className="sunrise" src='../Images/sunrise.png' />Sunrise 
+    moment.tz(props.full.timezone).add(13,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?(<p><img className="sunrise" src='../Images/sunrise.png'alt="Sunrise"/>Sunrise 
      </p>) :""}</span>
     </span> 
 
@@ -159,7 +159,7 @@ return(
    moment.tz(props.full.timezone).add(23,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>
     </span> 
 
-    <span><h5 >{moment.tz(props.full.timezone).add(24,"hour").format("h a")}</h5><img className="list-item__sub-title" alt="icon" src={`../Images/${props.full.hourly[24].weather[0].icon}.png`}alt="icon"/><br/>
+    <span><h5 >{moment.tz(props.full.timezone).add(24,"hour").format("h a")}</h5><img className="list-item__sub-title"  src={`../Images/${props.full.hourly[24].weather[0].icon}.png`}alt="icon"/><br/>
     <span>{Math.floor(Math.round(props.full.hourly[24].temp-273.15))+"°"}
     {moment.tz(props.full.timezone).add(24,"hour").format("h a")===moment(props.full.current.sunset*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunset.png'alt="Sunset" />Sunset</p>:
     moment.tz(props.full.timezone).add(24,"hour").format("h a")===moment(props.full.current.sunrise*1000).tz(props.full.timezone).format("h a")?<p><img className="sunrise" src='../Images/sunrise.png' alt="Sunrise"/>Sunrise</p> :""}</span>

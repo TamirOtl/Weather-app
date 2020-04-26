@@ -1,11 +1,11 @@
 import React from "react";
-import Hourly_Forecast from './Hourly_Forecast'
+import HourlyForecast from './HourlyForecast'
 import CurrentWeather from './CurrentWeather'
 import  DailyWeather from './DailyWeather'
 import LoadingPage from './LoadingPage'
 
 const WeatherPage = (props) =>   {
-{
+
     
          
       
@@ -24,7 +24,7 @@ const WeatherPage = (props) =>   {
          <h1 className="list-item--message h1">{Math.floor(Math.round(props.weather.main.temp-273.15))+"°"}</h1>  
                  
          <img className="list-item__sub-title" alt="icon" src={`../Images/${props.weather.weather[0].icon}.png`}/>
-        <Hourly_Forecast full={props.full} weather={props.weather} />
+        <HourlyForecast full={props.full} weather={props.weather}/>
         <CurrentWeather full={props.full} weather={props.weather}/>
         <DailyWeather  full={props.full} weather={props.weather}/>
         </div> 
@@ -38,7 +38,7 @@ const WeatherPage = (props) =>   {
         </div>
     )
     
-}
+
 
 }
 export {WeatherPage as default}

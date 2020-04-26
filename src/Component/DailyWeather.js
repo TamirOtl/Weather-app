@@ -2,7 +2,7 @@ import React from "react";
 import moment from 'moment-timezone';
 
 const DailyWeather = (props) =>   {
-{
+
    
     return(
 
@@ -60,7 +60,7 @@ const DailyWeather = (props) =>   {
         </div>
     )
     
-}
+
 
 }
 export {DailyWeather as default}

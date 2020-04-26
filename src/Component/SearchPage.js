@@ -4,15 +4,14 @@ import { FaSistrix } from "react-icons/fa";
 import { IoIosPaperPlane } from "react-icons/io";
 import Area from './Area'
 import { Route} from 'react-router-dom';
-import { createBrowserHistory } from "history";
+
 
 
 const SearchPage  = () => {
     const[query,setQuery]=useState('');
     const[weather,setWeather]=useState('');
     const[full,setFull]=useState('')
-    const[Latitude,setLatitude]=useState('')
-    const[longitude,setlongitude]=useState('')
+
     const [showText, setShowText] = useState(true);
     const error404='404'
    
@@ -46,7 +45,8 @@ const SearchPage  = () => {
             
       }
    
-
+      const[Latitude,setLatitude]=useState('')
+      const[longitude,setlongitude]=useState('')
       function getLocation() {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition);
@@ -54,7 +54,7 @@ const SearchPage  = () => {
          alert("Geolocation is not supported by this browser.");
         }
       }
-      
+     
       function showPosition(position) {
         let Latitude= position.coords.latitude ;
         
@@ -84,20 +84,18 @@ const SearchPage  = () => {
       
   return (
 
-    <div >
+    <div > 
       		<form  className="form" onSubmit={search}> 
           {weather.cod==="404" ?
           	(<input type="text" placeholder="Find your location..."
                          value={query}  aria-label="Search" 
                          onSelect={e => setQuery(e.target.value)}
-                         autoComplete="on"
-                         className="search_error" autoComplete='true'
+                         className="search_error" autoComplete='on'
                          required  onChange={e => setQuery(e.target.value)}
                         />):(<input type="text" placeholder="Find your location..."
                         value={query}  aria-label="Search" 
                         onSelect={e => setQuery(e.target.value)}
-                        autoComplete="on"
-                        className="search" autoComplete='true'
+                        className="search" autoComplete='on'
                         required  onChange={e => setQuery(e.target.value)}
                        />)}
              <button ><FaSistrix className=" fas fa-search " onKeyPress={search} /></button>

@@ -3,7 +3,7 @@ import moment from 'moment-timezone';
 
 
  const CurrentWeather = (props) => {
-      {
+     
            
   return(
         
@@ -46,6 +46,6 @@ import moment from 'moment-timezone';
             
         }
         
-        }
+        
   
 export {CurrentWeather as default}
