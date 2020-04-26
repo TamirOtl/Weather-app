@@ -1,47 +1,12 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import Header from './Header'
-import { FaSistrix } from "react-icons/fa";
 import Footer from './Footer'
 
 
-
 const Covid19  = () => {
-    const[query,setQuery]=useState('');
- 
-    
-    
-    
-    // const search = (e) => {
-    //     e.preventDefault();
-    //       fetch(`https://api.covid19api.com/summary`)
-    //         .then(res => res.json())
-    //         .then(result => {
-    //          setQuery(result);
-              
-    //           console.log(result);
-             
-          
-              
-              
-    //         }).catch((error) => {
-    //           console.log('error: ', error);
-        
-    //         });
-          
-            
-    //   }
-   
 
-    useEffect(() => {
-        fetch('https://api.covid19api.com/summary')
-            .then(res => res.json())
-            .then((res) => {
-               setQuery(res);
-            })
-    },[query])
-      
-     
-      
+ 
+ 
       
   return (
 
@@ -49,21 +14,13 @@ const Covid19  = () => {
 
 <div >
     <Header/>
+    
+    
    
-   <form>
- {(typeof query.Date != "undefined") ? (  
    
- <select className="search"> 
-   
-   {query.Countries.map((country) =>
-   <option  key={country.CountryCode}>{country.Country}</option>
-   
-   ) }     
- </select>
-  
- ):("")}
-     <button >Submit</button> 
-     </form>  
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div className="elfsight-app-bc1d6785-04ab-491f-a503-87e222dc5e5a"></div>
+        
  <Footer/>
 
 </div>
