@@ -9,8 +9,14 @@
     display: none;
   }
 }
-.eapps-widget-toolbar-panel{
-  display:none;
+.eapps-widget-toolbar{
+  display:none !important;
+}
+.eapps-widget-toolbar-panel-views {
+  display:none !important;
+}
+.eapps-widget-toolbar-panel-wrapper{
+  display: none !important;
 }
 .Foundation__Inner-sc-11tbro4-1 {
   color:$off_white;

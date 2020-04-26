@@ -109,13 +109,10 @@ const SearchPage  = () => {
 
 
       {weather.cod&& <Route to='/' />} 
-      {weather.cod===error404? <p className="form__error">city not found</p>: ""}
+      {weather.cod===error404? <p className="form__error">City not found</p>: ""}
       {weather.cod===error404? <Area/>:" "}
       {showText &&<Area/>}
-     
-     
 
-      
     </div>
   );
 }

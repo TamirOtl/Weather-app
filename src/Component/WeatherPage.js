@@ -1,5 +1,4 @@
 import React from "react";
-import moment from 'moment-timezone';
 import Hourly_Forecast from './Hourly_Forecast'
 import CurrentWeather from './CurrentWeather'
 import  DailyWeather from './DailyWeather'
@@ -28,19 +27,11 @@ const WeatherPage = (props) =>   {
         <Hourly_Forecast full={props.full} weather={props.weather} />
         <CurrentWeather full={props.full} weather={props.weather}/>
         <DailyWeather  full={props.full} weather={props.weather}/>
-  
-        
-       
-        
         </div> 
-        
-
-
-
          </div>
         </header> 
        
-        ): (<LoadingPage/> )): ("" )}
+        ):<LoadingPage/>):("")}
       
       
      
