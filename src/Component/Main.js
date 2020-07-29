@@ -4,10 +4,15 @@ import SearchPage from './SearchPage';
 import Footer from './Footer'
 
  const Main = () => {
+
+ 
+   
   return(
 <div>
 <Header/>
-<SearchPage/>
+
+  <SearchPage />
+
 <Footer/>
 </div>
 

@@ -21,7 +21,8 @@ const Covid19  = () => {
     
     
   
-<div className="elfsight-app-bc1d6785-04ab-491f-a503-87e222dc5e5a"></div>
+  
+<div class="elfsight-app-e363e314-a598-4b5f-acc9-32fbccd994c9"></div>
         
  <Footer/>
 

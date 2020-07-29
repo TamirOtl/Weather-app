@@ -81,7 +81,7 @@ const SearchPage  = () => {
          setShowText(false)
          
        }
-      
+       
   return (
 
     <div > 

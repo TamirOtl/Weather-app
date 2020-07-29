@@ -11,9 +11,11 @@ import moment from 'moment-timezone';
                     
         {(typeof props.weather.main != "undefined") ? (  
            (typeof props.full.timezone != "undefined")  ?(
+          
+              
              <main >
            
-        
+           
          <div>
                 
                
